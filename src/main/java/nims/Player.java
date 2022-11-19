@@ -4,9 +4,7 @@ public class Player {
     private int score = 0;
     private final String name;
 
-    //DO NOT CHANGE
     public Player(String name){
-
         this.name = name;
         System.out.println("-----------------------------");
     }

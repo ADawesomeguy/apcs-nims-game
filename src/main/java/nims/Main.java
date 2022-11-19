@@ -8,6 +8,8 @@ public class Main {
 
         boolean isPlaying = false;
         do {
+
+
             System.out.print("Please enter a name for the first player: ");
             Player p1 = new Player(sc.nextLine());
             System.out.print("Please enter a name for the second player: ");
@@ -25,9 +27,9 @@ public class Main {
                 p.adjustScore(game.takePiece());
             }
 
-            System.out.println("Would you like to keep playing? [yN]");
+            System.out.println("Would you like to keep playing? [yn]");
             String playAgainResponse = "";
-            while (playAgainResponse.equalsIgnoreCase("y") || !playAgainResponse.equalsIgnoreCase("n")) {
+            while (!playAgainResponse.equalsIgnoreCase("y") && !playAgainResponse.equalsIgnoreCase("n")) {
                 playAgainResponse = sc.nextLine();
             }
             if (playAgainResponse.equalsIgnoreCase("y")) isPlaying = true;
