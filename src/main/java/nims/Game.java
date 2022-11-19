@@ -33,6 +33,8 @@ public class Game {
         System.out.println("There " + (pieces == 1 ? "is " : "are ") + pieces + " remaining!");
         System.out.println("-----------------------");
         if (pieces == 0) {
+            System.out.printf("Player 1 (%s)'s score: %d\n", p1.getName(), p1.getScore());
+            System.out.printf("Player 2 (%s)'s score: %d\n", p2.getName(), p2.getScore());
             System.out.printf("Winner is: %s!\n", currentPlayer.equals(p1) ? "Player 2 " + "(" + p2.getName() + ")" : "Player 1 " + "(" + p1.getName() + ")");
         }
         return take;
