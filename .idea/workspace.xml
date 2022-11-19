@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f296efa-dd4a-44a3-92fb-b126c23fb2e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nims/Util.java" afterDir="false" />
+    <list default="true" id="5f296efa-dd4a-44a3-92fb-b126c23fb2e4" name="Changes" comment="feat: add cleaner terminal output with color">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_18_2022_9_34_PM_[Changes]/shelved.patch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nims/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nims/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nims/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nims/Main.java" afterDir="false" />
@@ -25,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,14 +36,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nims.Main" />
@@ -72,6 +73,21 @@
       <option name="presentableId" value="Default" />
       <updated>1668819197949</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat: add scores to ending text and add play again prompt">
+      <created>1668828862917</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668828862917</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: add cleaner terminal output with color">
+      <created>1668829028441</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668829028441</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,5 +100,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: add scores to ending text and add play again prompt" />
+    <MESSAGE value="feat: add cleaner terminal output with color" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add cleaner terminal output with color" />
   </component>
 </project>

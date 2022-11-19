@@ -8,12 +8,16 @@ public class Main {
 
         boolean isPlaying = false;
         do {
-
-
             System.out.print("Please enter a name for the first player: ");
+            Util.setColor(System.out, Util.Color.CYAN);
             Player p1 = new Player(sc.nextLine());
+            Util.clearFormatting(System.out);
+            System.out.println("-----------------------------");
             System.out.print("Please enter a name for the second player: ");
+            Util.setColor(System.out, Util.Color.CYAN);
             Player p2 = new Player(sc.nextLine());
+            Util.clearFormatting(System.out);
+            System.out.println("-----------------------------");
 
             Game game = new Game(p1, p2);
             game.setFirstPlayer((int) (Math.random() * 2) == 0 ? p1 : p2);

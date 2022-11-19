@@ -36,9 +36,9 @@ public class Game {
         System.out.println("There " + (pieces == 1 ? "is " : "are ") + Util.setColor(Util.Color.GREEN) + pieces + Util.clearFormatting() + " remaining!");
         System.out.println("-----------------------");
         if (pieces == 0) {
-            System.out.printf(Util.setBold() + "Player 1 (%s)'s score: %d\n" + Util.clearFormatting(), p1.getName(), p1.getScore());
-            System.out.printf(Util.setBold() + "Player 2 (%s)'s score: %d\n" + Util.clearFormatting(), p2.getName(), p2.getScore());
-            System.out.printf("Winner is: %s!\n", Util.setBold() + (currentPlayer.equals(p1) ? "Player 2 " + "(" + p2.getName() + ")" : "Player 1 " + "(" + p1.getName() + ")") + Util.clearFormatting());
+            System.out.printf("Player 1 (%s)'s score: %s\n", Util.setBold() + p1.getName() + Util.clearFormatting(), Util.setColor(Util.Color.MAGENTA) + p1.getScore() + Util.clearFormatting());
+            System.out.printf("Player 2 (%s)'s score: %s\n", Util.setBold() + p2.getName() + Util.clearFormatting(), Util.setColor(Util.Color.MAGENTA) + p2.getScore() + Util.clearFormatting());
+            System.out.printf("Winner is: %s!\n", Util.setBold() + Util.invertFgBg() + (currentPlayer.equals(p1) ? "Player 2 " + "(" + p2.getName() + ")" : "Player 1 " + "(" + p1.getName() + ")") + Util.clearFormatting());
         }
         return take;
     }
