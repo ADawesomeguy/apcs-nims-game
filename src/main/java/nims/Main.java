@@ -8,6 +8,7 @@ public class Main {
 
         boolean isPlaying = false;
         do {
+            Util.clearScreen(System.out);
             System.out.print("Please enter a name for the first player: ");
             Util.setColor(System.out, Util.Color.CYAN);
             Player p1 = new Player(sc.nextLine());
