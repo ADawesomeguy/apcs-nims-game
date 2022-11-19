@@ -24,18 +24,21 @@ public class Game {
         int take = 0;
 
         while (!isLegal(take)) {
-            System.out.print("Please input the amount of pieces you would like to take: ");
+            Util.invertFgBg(System.out);
+            System.out.print("Please input the amount of pieces you would like to take:");
+            Util.clearFormatting(System.out);
+            System.out.print(" ");
             take = sc.nextInt();
         }
 
         pieces -= take;
 
-        System.out.println("There " + (pieces == 1 ? "is " : "are ") + pieces + " remaining!");
+        System.out.println("There " + (pieces == 1 ? "is " : "are ") + Util.setColor(Util.Color.GREEN) + pieces + Util.clearFormatting() + " remaining!");
         System.out.println("-----------------------");
         if (pieces == 0) {
-            System.out.printf("Player 1 (%s)'s score: %d\n", p1.getName(), p1.getScore());
-            System.out.printf("Player 2 (%s)'s score: %d\n", p2.getName(), p2.getScore());
-            System.out.printf("Winner is: %s!\n", currentPlayer.equals(p1) ? "Player 2 " + "(" + p2.getName() + ")" : "Player 1 " + "(" + p1.getName() + ")");
+            System.out.printf(Util.setBold() + "Player 1 (%s)'s score: %d\n" + Util.clearFormatting(), p1.getName(), p1.getScore());
+            System.out.printf(Util.setBold() + "Player 2 (%s)'s score: %d\n" + Util.clearFormatting(), p2.getName(), p2.getScore());
+            System.out.printf("Winner is: %s!\n", Util.setBold() + (currentPlayer.equals(p1) ? "Player 2 " + "(" + p2.getName() + ")" : "Player 1 " + "(" + p1.getName() + ")") + Util.clearFormatting());
         }
         return take;
     }
