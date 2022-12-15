@@ -20,7 +20,7 @@ public class Util {
     private static final char ESC = '\033';
 
     public static void clearScreen(PrintStream ps) {
-        ps.print(ESC + "[2j");
+        ps.print(ESC + "[2J");
         ps.print(ESC + "[H");
     }
 
